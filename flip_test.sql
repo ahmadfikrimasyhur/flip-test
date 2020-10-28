@@ -7,10 +7,6 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 SET NAMES utf8mb4;
 
-INSERT INTO `migration` (`version`, `apply_time`) VALUES
-('m000000_000000_base',	1603787612),
-('m201027_075132_create_seller_disburse_table',	1603787780);
-
 DROP TABLE IF EXISTS `seller_disburse`;
 CREATE TABLE `seller_disburse` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
