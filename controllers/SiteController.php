@@ -25,9 +25,11 @@ class SiteController extends Controller
                     [
                         'actions' => ['disburse'],
                         'allow' => Yii::$app->user->identity->role === 'admin',
+                        'roles' => ['@'],
                     ], [
                         'actions' => ['withdraw'],
                         'allow' => Yii::$app->user->identity->role === 'seller',
+                        'roles' => ['@'],
                     ], [
                         'actions' => ['logout', 'withdraw', 'disburse'],
                         'allow' => true,
