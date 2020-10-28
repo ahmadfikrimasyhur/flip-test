@@ -22,15 +22,17 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'only' => ['logout', 'withdraw', 'disburse'],
                 'rules' => [
-                    /*[
+                    [
                         'actions' => ['disburse'],
-                        'allow' => Yii::$app->user->identity->role === 'admin',
-                        'roles' => ['@'],
+                        'allow' => !Yii::$app->user->isGuest
+                                   ? Yii::$app->user->identity->role === 'admin'
+                                   : false,
                     ], [
                         'actions' => ['withdraw'],
-                        'allow' => Yii::$app->user->identity->role === 'seller',
-                        'roles' => ['@'],
-                    ],*/ [
+                        'allow' => !Yii::$app->user->isGuest
+                                   ? Yii::$app->user->identity->role === 'seller'
+                                   : false,
+                    ], [
                         'actions' => ['logout', 'withdraw', 'disburse'],
                         'allow' => true,
                         'roles' => ['@'],
