@@ -28,6 +28,7 @@ The minimum requirement by this project:
 - Apache 2.x Web server 
 - PHP 5.6.0 and up
 - Mysql 5.5 and up
+- Composer 1 and up
 
 
 INSTALLATION
@@ -38,6 +39,8 @@ INSTALLATION
 - extract zip
 
 - goto extracted folder
+
+- composer update
 
 - create mysql database / use existing
 
