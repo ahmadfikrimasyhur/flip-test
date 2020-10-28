@@ -37,9 +37,32 @@ INSTALLATION
 
 - clone this project
 
+- composer update
+
+- create mysql database / use existing
+
+- adjust config
+
+- php yii migrate
+
+- php yii serve
+
+- open http://localhost:8080/
+
+- login admin for process disbursement: username : admin / password: admin
+
+- login seller for process withdraw: username : seller / password: seller
+------------
+
+### Install emailed zip file
+
+- extract zip
+
 - goto extracted folder
 
-- composer update
+- create mysql database / use existing
+
+- adjust config
 
 - php yii migrate
 
