@@ -7,7 +7,7 @@ $this->title = 'My Marketplace';
         <h1>Welcome back<?php echo Yii::$app->user->isGuest ? '' : ', '.Yii::$app->user->identity->username ?>!</h1>
         <p>
         <?php
-        $dbopts = parse_url(getenv('DATABASE_URL'));
+        $dbopts = parse_url(getenv('CLEARDB_DATABASE_URL'));
         
         var_dump($dbopts);
         ?>
