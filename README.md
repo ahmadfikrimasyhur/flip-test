@@ -33,6 +33,31 @@ The minimum requirement by this project:
 INSTALLATION
 ------------
 
+### Install via emailed zip file
+
+- extract zip
+
+- goto extracted folder
+
+- create mysql database / use existing
+
+- adjust config
+
+- php yii migrate
+
+  or
+  
+  run flip_test.sql to your mysql database
+
+- php yii serve
+
+- open http://localhost:8080/
+
+- login admin for process disbursement: username : admin / password: admin
+
+- login seller for process withdraw: username : seller / password: seller
+
+
 ### Install via Composer
 
 - clone this project
@@ -45,26 +70,9 @@ INSTALLATION
 
 - php yii migrate
 
-- php yii serve
-
-- open http://localhost:8080/
-
-- login admin for process disbursement: username : admin / password: admin
-
-- login seller for process withdraw: username : seller / password: seller
-------------
-
-### Install emailed zip file
-
-- extract zip
-
-- goto extracted folder
-
-- create mysql database / use existing
-
-- adjust config
-
-- php yii migrate
+  or
+  
+  run flip_test.sql to your mysql database
 
 - php yii serve
 
